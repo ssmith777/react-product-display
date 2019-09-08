@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import { Link } from 'react-router-dom';
 // Come back and add array for links to NavBar
 const NavBar = ({ logoName }) => {
   return (
@@ -9,10 +9,10 @@ const NavBar = ({ logoName }) => {
         <h1 className='logo'>{logoName}</h1>
         <ul className='nav'>
           <li>
-            <a href='#home'>Home</a>
+            <Link to='/'>Home</Link>
           </li>
           <li>
-            <a href='#about'>About</a>
+            <Link to='/about'>About</Link>
           </li>
         </ul>
       </div>
