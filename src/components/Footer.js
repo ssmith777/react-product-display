@@ -58,7 +58,7 @@ const Footer = () => {
             className='mt-1'
             name='email-form'
             method='POST'
-            data-netlify='true'
+            // data-netlify='true'
           >
             <div className='email-form'>
               <span className='form-control-wrap'>
