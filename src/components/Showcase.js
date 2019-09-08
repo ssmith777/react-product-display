@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 //overlay img in css needs to be changed to dynamic
 const Showcase = ({ title, paragraph, linkText }) => {
@@ -9,9 +10,10 @@ const Showcase = ({ title, paragraph, linkText }) => {
         <div>
           <h1>{title}</h1>
           <p>{paragraph}</p>
-          <a href='#home' className='btn'>
+
+          <Link className='btn' to='/about'>
             {linkText}
-          </a>
+          </Link>
         </div>
         <img src='https://i.ibb.co/37Y74kv/showcase.jpg' alt='showcase' />
       </div>
