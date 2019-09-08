@@ -4,7 +4,7 @@
 
 ---
 
-(https://react-product-display.herokuapp.com/)
+![Demo](https://raw.githubusercontent.com/peterpalau/react-bnb-gallery/master/react-bnb-demo.png)
 
 ### view site @: https://react-product-display.herokuapp.com/
 
