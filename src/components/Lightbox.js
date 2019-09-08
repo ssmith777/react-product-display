@@ -58,7 +58,6 @@ class LightBox extends Component {
   }
 
   toggleGallery = id => {
-    console.log(id);
     this.setState(prevState => ({
       galleryOpened: !prevState.galleryOpened,
       photoid: id
