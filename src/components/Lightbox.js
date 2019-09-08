@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
-
 import ReactBnbGallery from 'react-bnb-gallery';
 import { Link } from 'react-router-dom';
+
 const photos = [
   {
     photo: 'https://i.ibb.co/CHLBZnp/gal2323.jpg',
@@ -57,10 +57,10 @@ class LightBox extends Component {
     this.toggleGallery = this.toggleGallery.bind(this);
   }
 
-  toggleGallery = id => {
+  toggleGallery = photoid => {
     this.setState(prevState => ({
       galleryOpened: !prevState.galleryOpened,
-      photoid: id
+      photoid
     }));
   };
 
