@@ -69,60 +69,17 @@ class LightBox extends Component {
       <Fragment>
         <div className='section-c'>
           <div className='gallery'>
-            <Link
-              to=''
-              onClick={() => {
-                this.toggleGallery(1);
-              }}
-              className='big'
-            >
-              <img src='https://i.ibb.co/CHLBZnp/gal2323.jpg' alt='' />
-            </Link>
-            <Link
-              to=''
-              onClick={() => {
-                this.toggleGallery(2);
-              }}
-              className='big'
-            >
-              <img src='https://i.ibb.co/4pBbhfY/gal39834.jpg' alt='' />
-            </Link>
-            <Link
-              to=''
-              onClick={() => {
-                this.toggleGallery(3);
-              }}
-              className='big'
-            >
-              <img src='https://i.ibb.co/xSnHP7g/gal43884.jpg' alt='' />
-            </Link>
-            <Link
-              to=''
-              onClick={() => {
-                this.toggleGallery(4);
-              }}
-              className='big'
-            >
-              <img src='https://i.ibb.co/QN6Bnrb/gal4958.jpg' alt='' />
-            </Link>
-            <Link
-              to=''
-              onClick={() => {
-                this.toggleGallery(5);
-              }}
-              className='big'
-            >
-              <img src='https://i.ibb.co/dGZvj75/gal4545.jpg' alt='' />
-            </Link>
-            <Link
-              to=''
-              onClick={() => {
-                this.toggleGallery(6);
-              }}
-              className='big'
-            >
-              <img src='https://i.ibb.co/S6FVFNt/gal74744.jpg' alt='' />
-            </Link>
+            {photos.map(photo => (
+              <Link
+                to=''
+                onClick={() => {
+                  this.toggleGallery(photo.id);
+                }}
+                className='big'
+              >
+                <img src={photo.photo} alt='' />
+              </Link>
+            ))}
           </div>
         </div>
         <ReactBnbGallery
