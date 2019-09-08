@@ -5,43 +5,43 @@ import { Link } from 'react-router-dom';
 const photos = [
   {
     photo: 'https://i.ibb.co/CHLBZnp/gal2323.jpg',
-    // caption: 'Viñales, Pinar del Río, Cuba',
-    // subcaption: 'Photo by Simon Matzinger on Unsplash',
+    caption: 'Jam out in style..',
+    subcaption: 'Jamming',
     thumbnail: 'https://i.ibb.co/CHLBZnp/gal2323.jpg',
     id: 1
   },
   {
     photo: 'https://i.ibb.co/4pBbhfY/gal39834.jpg',
-    // caption: 'La Habana, Cuba',
-    // subcaption: 'Photo by Gerardo Sanchez on Unsplash',
+    caption: 'Sleek style and color...',
+    subcaption: 'Sleek Design',
     thumbnail: 'https://i.ibb.co/4pBbhfY/gal39834.jpg',
     id: 2
   },
   {
     photo: 'https://i.ibb.co/xSnHP7g/gal43884.jpg',
-    // caption: 'Woman smoking a tobacco',
-    // subcaption: 'Photo by Hannah Cauhepe on Unsplash',
+    caption: 'Classic leather design...',
+    subcaption: 'Stylish Leather',
     thumbnail: 'https://i.ibb.co/xSnHP7g/gal43884.jpg',
     id: 3
   },
   {
     photo: 'https://i.ibb.co/QN6Bnrb/gal4958.jpg',
-    // caption: 'Woman smoking a tobacco',
-    // subcaption: 'Photo by Hannah Cauhepe on Unsplash',
+    caption: 'Matches Apple and Windows products...',
+    subcaption: 'Apple White',
     thumbnail: 'https://i.ibb.co/QN6Bnrb/gal4958.jpg',
     id: 4
   },
   {
     photo: 'https://i.ibb.co/dGZvj75/gal4545.jpg',
-    // caption: 'Woman smoking a tobacco',
-    // subcaption: 'Photo by Hannah Cauhepe on Unsplash',
+    caption: 'Kid approved...',
+    subcaption: 'Rugged Design',
     thumbnail: 'https://i.ibb.co/dGZvj75/gal4545.jpg',
     id: 5
   },
   {
     photo: 'https://i.ibb.co/S6FVFNt/gal74744.jpg',
-    // caption: 'Woman smoking a tobacco',
-    // subcaption: 'Photo by Hannah Cauhepe on Unsplash',
+    caption: 'Clean cut and sleek...',
+    subcaption: 'Sleek',
     thumbnail: 'https://i.ibb.co/S6FVFNt/gal74744.jpg',
     id: 6
   }
@@ -60,15 +60,14 @@ class LightBox extends Component {
   toggleGallery = id => {
     console.log(id);
     this.setState(prevState => ({
-      galleryOpened: !prevState.galleryOpened
+      galleryOpened: !prevState.galleryOpened,
+      photoid: id
     }));
-    this.setState({ photoid: id });
   };
 
   render() {
     return (
       <Fragment>
-        {/* <button onClick={this.toggleGallery}>Open photo gallery</button> */}
         <div className='section-c'>
           <div className='gallery'>
             <Link
