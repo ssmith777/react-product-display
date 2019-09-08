@@ -10,7 +10,6 @@ const Showcase = ({ title, paragraph, linkText }) => {
         <div>
           <h1>{title}</h1>
           <p>{paragraph}</p>
-
           <Link className='btn' to='/about'>
             {linkText}
           </Link>
