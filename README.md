@@ -1,10 +1,10 @@
-#### React Product Display Page
+# React Product Display Page
 
-### Note: This site may be slow loading, please allow a little time from the container to spin up
+## Note: This site may be slow loading, please allow a little time from the container to spin up
 
 ---
 
-[https://react-product-display.herokuapp.com/]
+(https://react-product-display.herokuapp.com/)
 
 ### view site @: https://react-product-display.herokuapp.com/
 
